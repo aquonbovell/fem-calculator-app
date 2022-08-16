@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+:root {
+  --color-text-base: 255, 255, 255;
+  --color-text-inverted: 68, 75, 90;
+  --color-text-key-reset: 255, 255, 255;
+  --color-text-key-danger: 255, 255, 255;
+
+  --color-bg: 58, 71, 100;
+  --color-bg-fill: 35, 44, 67;
+  --color-bg-screen: 24, 32, 52;
+
+  --color-key-accent: 234, 227, 220;
+  --color-key-accent-light: 255, 255, 255;
+  --color-key-accent-shadow: 180, 165, 151;
+
+  --color-key-reset-accent: 99, 112, 151;
+  --color-key-reset-accent-light: 162, 179, 225;
+  --color-key-reset-accent-shadow: 64, 78, 114;
+
+  --color-key-danger-accent: 208, 63, 47;
+  --color-key-danger-accent-light: 249, 108, 91;
+  --color-key-danger-accent-shadow: 147, 38, 26;
+  --translate: 0;
+}
+
+.vintage {
+  --color-text-base: 53, 53, 44;
+  --color-text-inverted: 53, 53, 44;
+  --color-text-key-reset: 255, 255, 255;
+  --color-text-key-danger: 255, 255, 255;
+
+  --color-bg: 230, 230, 230;
+  --color-bg-fill: 209, 204, 204;
+  --color-bg-screen: 237, 237, 237;
+
+  --color-key-accent: 229, 228, 225;
+  --color-key-accent-light: 255, 255, 255;
+  --color-key-accent-shadow: 166, 157, 145;
+
+  --color-key-reset-accent: 55, 127, 134;
+  --color-key-reset-accent-light: 98, 181, 189;
+  --color-key-reset-accent-shadow: 27, 95, 101;
+
+  --color-key-danger-accent: 202, 85, 2;
+  --color-key-danger-accent-light: 255, 139, 56;
+  --color-key-danger-accent-shadow: 137, 57, 1;
+  --translate: 1;
+}
+
+.retro {
+  --color-text-base: 255, 229, 61;
+  --color-text-inverted: 255, 229, 61;
+  --color-text-key-reset: 255, 255, 255;
+  --color-text-key-danger: 27, 36, 40;
+
+  --color-bg: 22, 6, 40;
+  --color-bg-fill: 29, 9, 52;
+  --color-bg-screen: 29, 9, 52;
+
+  --color-key-accent: 52, 28, 79;
+  --color-key-accent-light: 107, 52, 172;
+  --color-key-accent-shadow: 135, 28, 156;
+
+  --color-key-reset-accent: 88, 7, 125;
+  --color-key-reset-accent-light: 134, 49, 176;
+  --color-key-reset-accent-shadow: 188, 21, 244;
+
+  --color-key-danger-accent: 0, 224, 209;
+  --color-key-danger-accent-light: 148, 255, 249;
+  --color-key-danger-accent-shadow: 108, 249, 242;
+  --translate: 2;
+}
+
+.key {
+  @apply cursor-pointer mx-auto flex w-full h-[3.75rem] items-center justify-center aspect-square text-[32px] bg-skin-key-accent text-skin-inverted shadow-key rounded-md hover:bg-skin-key-accent-light;
+}
+.key-inverted-span-2 {
+  @apply cursor-pointer mx-auto flex w-full h-[3.75rem] items-center justify-center text-[20px] col-span-2 rounded-md uppercase;
+}
+.key-inverted-span-1 {
+  @apply cursor-pointer mx-auto flex w-full h-[3.75rem] items-center justify-center aspect-square text-[20px] rounded-md uppercase;
+}
+.del {
+  @apply bg-skin-key-reset-accent text-skin-key-reset shadow-key-reset hover:bg-skin-key-reset-accent-light;
+}
+.reset {
+  @apply bg-skin-key-reset-accent text-skin-key-reset shadow-key-reset hover:bg-skin-key-reset-accent-light;
+}
+
+.equals {
+  @apply bg-skin-key-danger-accent text-skin-key-danger shadow-key-danger hover:bg-skin-key-danger-accent-light;
+}
+/* html {
+  height: 100%;
+  display: grid;
+} */

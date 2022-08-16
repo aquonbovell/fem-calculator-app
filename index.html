@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="grid h-full items-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <script src="app.js" defer type="module"></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body
+    class="font-base my-5 grid grid-cols-mobile gap-y-8 bg-skin-bg text-skin-base h-max"
+  >
+    <header class="col-start-2 flex justify-between text-skin-base">
+      <h1 class="text-4xl">calc</h1>
+      <div class="toggle-container flex gap-7">
+        <span class="uppercase self-end tracking-widest">theme</span>
+        <div>
+        <div class="flex items-center justify-evenly "><span>1</span> <span>2</span> <span>3</span></div>
+        <div
+          class="w-[71px] h-[26px] bg-skin-fill rounded-2xl px-[5.5px] relative"
+        >
+          <div
+            class="slider cursor-pointer w-[1rem] h-[1rem] bg-skin-key-danger-accent rounded-2xl absolute top-0 bottom-0 my-auto hover:bg-skin-key-danger-accent-light transition-transform duration-500 ease-in-out translate-x-slider"
+          ></div>
+        </div></div>
+      </div>
+    </header>
+
+    <main class="col-start-2 flex flex-col gap-6">
+      <div class="h-[5.5rem] p-[1.625rem] bg-skin-screen text-5xl text-right rounded-xl text-skin-base screen flex-wrap" >0</div>
+      <section class="bg-skin-fill grid grid-cols-4 p-6 rounded-xl gap-3 gap-y-4 ">
+        <span class="key btn">7</span>
+        <span class="key btn">8</span>
+        <span class="key btn">9</span>
+        <span class="key-inverted-span-1 del btn">del</span>
+        <span class="key btn">4</span>
+        <span class="key btn">5</span>
+        <span class="key btn">6</span>
+        <span class="key btn">+</span>
+        <span class="key btn">1</span>
+        <span class="key btn">2</span>
+        <span class="key btn">3</span>
+        <span class="key btn">-</span>
+        <span class="key btn">.</span>
+        <span class="key btn">0</span>
+        <span class="key btn">/</span>
+        <span class="key btn">x</span>
+        <span class="key-inverted-span-2 reset btn">reset</span>
+        <span class="key-inverted-span-2 equals btn">=</span>
+      </section>
+    </main>
+  </body>
+</html>
